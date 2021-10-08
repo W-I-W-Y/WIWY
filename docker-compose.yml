@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   mysql:
@@ -11,10 +11,11 @@ services:
     cap_add:
       - SYS_NICE
     environment:
-      - MYSQL_DATABASE=wiwy 
+      - MYSQL_DATABASE=wiwy
       - MYSQL_ROOT_PASSWORD=wiwy
       - MYSQL_USER=wiwy
       - MYSQL_PASSWORD=wiwy
+      - TZ=Asia/Seoul
 
   spring-boot:
     restart: always
@@ -27,23 +28,26 @@ services:
     volumes:
       - springdata:/usr/src:rw
       - ./server/:/server/
-    depends_on: 
+    depends_on:
       - mysql
+    environment:
+      - TZ=Asia/Seoul
 
   react:
     build:
       context: ./client
     command: ["npm", "start"]
     ports:
-     - 3000:3000
+      - 3000:3000
     volumes:
       - ./client/:/client
       - ./client/node_modules/:/client/node_modules
     environment:
-     - CI=true
-     - CHOKIDAR_USEPOLLING=true
+      - CI=true
+      - CHOKIDAR_USEPOLLING=true
+      - TZ=Asia/Seoul
     tty: true
-  
+
 volumes:
   dbdata:
   springdata:
