@@ -81,6 +81,9 @@
 ![자유게시판](https://user-images.githubusercontent.com/57143818/188648773-bc15b7d5-0dca-49ef-8513-f549af298461.png)
 ![글쓰기](https://user-images.githubusercontent.com/57143818/188648782-45b2e037-c25b-459a-a26a-2c9e33feaf11.png)
 
+---
+
+# Build
 ## Prerequisites
 - Docker > 19.x
 
@@ -110,7 +113,7 @@
     $ cd server
     server$ ./gradlew build
     ```
-# Usage
+## Usage
 - 도커 이미지 빌드 및 컨테이너 실행
     ```shell
     $ docker-compose up --build
