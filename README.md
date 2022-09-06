@@ -16,10 +16,10 @@
 > 실시간으로 업데이트되는 코로나19 관련 정보를 제공하며 커뮤니티 기능을 활용해 사용자들끼리 소통할 수 있는 서비스입니다.
 > 
 
----
-
 ## 🛠️ 기술 스택
-
+| FrontEnd | BackEnd | DevOps |
+| --- | --- | --- |
+|<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">|<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> ![JPA](https://img.shields.io/badge/jpa-6DA55F.svg?style=for-the-badge&logo=springdatajpa&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%230769AD.svg?style=for-the-badge&logo=mysql&logoColor=white) | ![Docker](https://img.shields.io/badge/docker-%23007ACC.svg?style=for-the-badge&logo=docker&logoColor=white) ![AWS EC2](https://img.shields.io/badge/awsec2-%23E34F26.svg?style=for-the-badge&logo=awsec2&logoColor=white)
 
 ## 🗃️ 프로젝트 구조
 
@@ -27,12 +27,8 @@
 
 ![아키텍처](https://user-images.githubusercontent.com/57143818/188647700-94c8bafa-4312-4087-85d4-c874e4bc2cab.PNG)
 
----
-
 ## 🔗 ERD
 ![ERD](https://user-images.githubusercontent.com/57143818/188648168-9d91ffb3-9173-4f21-b06f-19ee051a0a8a.png)
-
----
 
 ## 💻 주요 기능 및 데모 사진
 
